@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		93AE1CB62B11C86F0022A6AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE1CB52B11C86F0022A6AB /* AppDelegate.swift */; };
 		93AE1CB82B11C86F0022A6AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE1CB72B11C86F0022A6AB /* SceneDelegate.swift */; };
-		93AE1CBA2B11C86F0022A6AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE1CB92B11C86F0022A6AB /* ViewController.swift */; };
 		93AE1CBD2B11C86F0022A6AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AE1CBB2B11C86F0022A6AB /* Main.storyboard */; };
 		93AE1CBF2B11C8710022A6AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AE1CBE2B11C8710022A6AB /* Assets.xcassets */; };
 		93AE1CC22B11C8710022A6AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AE1CC02B11C8710022A6AB /* LaunchScreen.storyboard */; };
+		93AE1CCA2B11C8AB0022A6AB /* BillListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE1CC92B11C8AB0022A6AB /* BillListTableViewController.swift */; };
+		93AE1CCC2B11C8D10022A6AB /* BillDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE1CCB2B11C8D10022A6AB /* BillDetailTableViewController.swift */; };
+		93AE1CD02B121D010022A6AB /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE1CCF2B121D010022A6AB /* Bill.swift */; };
+		93AE1CD22B126E710022A6AB /* Bill+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE1CD12B126E710022A6AB /* Bill+Extras.swift */; };
+		93AE1CD42B1271580022A6AB /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE1CD32B1271580022A6AB /* Database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		93AE1CB22B11C86F0022A6AB /* MyLabBillManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLabBillManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AE1CB52B11C86F0022A6AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93AE1CB72B11C86F0022A6AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93AE1CB92B11C86F0022A6AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93AE1CBC2B11C86F0022A6AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93AE1CBE2B11C8710022A6AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93AE1CC12B11C8710022A6AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93AE1CC32B11C8710022A6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93AE1CC92B11C8AB0022A6AB /* BillListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListTableViewController.swift; sourceTree = "<group>"; };
+		93AE1CCB2B11C8D10022A6AB /* BillDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailTableViewController.swift; sourceTree = "<group>"; };
+		93AE1CCF2B121D010022A6AB /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		93AE1CD12B126E710022A6AB /* Bill+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bill+Extras.swift"; sourceTree = "<group>"; };
+		93AE1CD32B1271580022A6AB /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		93AE1CB42B11C86F0022A6AB /* MyLabBillManager */ = {
 			isa = PBXGroup;
 			children = (
+				93AE1CCE2B121CD90022A6AB /* View Controllers */,
+				93AE1CCD2B121CC70022A6AB /* Model */,
 				93AE1CB52B11C86F0022A6AB /* AppDelegate.swift */,
 				93AE1CB72B11C86F0022A6AB /* SceneDelegate.swift */,
-				93AE1CB92B11C86F0022A6AB /* ViewController.swift */,
 				93AE1CBB2B11C86F0022A6AB /* Main.storyboard */,
 				93AE1CBE2B11C8710022A6AB /* Assets.xcassets */,
 				93AE1CC02B11C8710022A6AB /* LaunchScreen.storyboard */,
 				93AE1CC32B11C8710022A6AB /* Info.plist */,
 			);
 			path = MyLabBillManager;
+			sourceTree = "<group>";
+		};
+		93AE1CCD2B121CC70022A6AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93AE1CD32B1271580022A6AB /* Database.swift */,
+				93AE1CCF2B121D010022A6AB /* Bill.swift */,
+				93AE1CD12B126E710022A6AB /* Bill+Extras.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93AE1CCE2B121CD90022A6AB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93AE1CCB2B11C8D10022A6AB /* BillDetailTableViewController.swift */,
+				93AE1CC92B11C8AB0022A6AB /* BillListTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93AE1CBA2B11C86F0022A6AB /* ViewController.swift in Sources */,
+				93AE1CCC2B11C8D10022A6AB /* BillDetailTableViewController.swift in Sources */,
+				93AE1CD22B126E710022A6AB /* Bill+Extras.swift in Sources */,
 				93AE1CB62B11C86F0022A6AB /* AppDelegate.swift in Sources */,
+				93AE1CCA2B11C8AB0022A6AB /* BillListTableViewController.swift in Sources */,
+				93AE1CD02B121D010022A6AB /* Bill.swift in Sources */,
+				93AE1CD42B1271580022A6AB /* Database.swift in Sources */,
 				93AE1CB82B11C86F0022A6AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
